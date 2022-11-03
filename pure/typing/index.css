@@ -1,0 +1,21 @@
+#container {
+  animation: flicker 1.5s linear infinite forwards;
+}
+
+#container.stop {
+  animation-play-state: paused;
+}
+
+@keyframes flicker {
+  0% {
+    border-color: #000;
+  }
+
+  50% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: #000;
+  }
+}

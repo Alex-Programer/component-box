@@ -7,9 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    h1,
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      position: fixed;
+      left: 20px;
+      top: 0;
+      z-index: 10;
+    }
+
     h2 {
       text-align: center;
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+      box-shadow: 0 0 10px #ddd;
+      margin: 0;
+      line-height: 50px;
     }
 
     iframe {
@@ -24,12 +41,13 @@
 <body>
   <h1>Component</h1>
 
-  <h2>Vue</h2>
+  <h2>Pure</h2>
+  <iframe src="https://vue-wheat-chi.vercel.app/"></iframe>
 
+  <h2>Vue</h2>
   <iframe src="https://vue-wheat-chi.vercel.app/"></iframe>
 
   <h2>React</h2>
-
   <iframe src="https://react-lyart-two.vercel.app/"></iframe>
 </body>
 
