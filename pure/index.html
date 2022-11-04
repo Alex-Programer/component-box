@@ -5,17 +5,76 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./typing/index.css">
+  <title>Pure</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-  <div name="card" title="打字机效果" refresh>
-    <div id="typing"></div>
+  <div id="demo">
+    <div name="打字机效果" refresh>
+      <div id="typing"></div>
+    </div>
+
+    <div name="京东发现好货轮播效果">
+      <div class="jd-container" id='jd-container'>
+        <div class="jd-scroll-container" id='jd-scrollContainer'>
+          <div class="wrap">
+            <div><span>1</span></div>
+            <div><span>2</span></div>
+            <div><span>3</span></div>
+            <div><span>4</span></div>
+            <div><span>5</span></div>
+            <div><span>6</span></div>
+            <div><span>7</span></div>
+            <div><span>8</span></div>
+            <div><span>1</span></div>
+            <div><span>2</span></div>
+            <div><span>3</span></div>
+          </div>
+        </div>
+        <div class="scroll-bar" id="scrollBar">
+          <div class="bar" id="bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div name="简易计算器">
+      <div id="Calculator" class="calculator">
+        <div id="result" class="reslult"></div>
+        <div id="buttons" class="buttons">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>C</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>+</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>-</span>
+          <span>0</span>
+          <span>.</span>
+          <span>/</span>
+          <span>*</span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span>=</span>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <script src="./typing/index.js"></script>
-  <script src="./card.js"></script>
+  <script src="./index.js"></script>
+  <script>
+    insertAssets([
+      { css: './typing/index.css', script: './typing/index.js' },
+      { css: './jd/index.css', script: './jd/index.js' },
+      { css: './calculator/index.css', script: './calculator/index.js' },
+    ])
+  </script>
 </body>
 
 </html>

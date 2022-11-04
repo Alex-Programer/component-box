@@ -1,0 +1,35 @@
+.calculator{
+  width: 232px;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+}
+
+.reslult{
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(5, 60px);
+}
+
+.buttons span{
+  text-align: center;
+  line-height: 60px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.buttons span:hover {
+  background: #eee;
+}
+
+.buttons span:active{
+    background: #ccc;
+}
+
+.buttons span:nth-child(4n) {
+  border-right: none;
+}

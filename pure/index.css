@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#demo {
+  padding: 20px;
+}
+
+#demo>div+div {
+  margin-top: 20px;
+}

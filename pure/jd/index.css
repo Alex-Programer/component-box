@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.jd-container {
+  position: relative;
+  width: 600px;
+  user-select: none;
+}
+
+.jd-scroll-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrap {
+  white-space: nowrap;
+  font-size: 0;
+  display: inline-flex;
+}
+
+.wrap div {
+  width: 200px;
+  height: 200px;
+  background: #ddd;
+  font-size: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-bar {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 10px;
+  height: 4px;
+  background-color: #8787e4;
+  transition: 0.1s linear;
+  opacity: 0;
+}
+
+.scroll-bar .bar {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100px;
+  height: 14px;
+  border-radius: 10px;
+  background-color: #8787e4;
+  cursor: pointer;
+}
