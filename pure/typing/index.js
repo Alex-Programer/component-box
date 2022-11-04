@@ -49,4 +49,11 @@ function render() {
   drawText.call(this);
 }
 
-const typed = new Typed("typing", { text: "Hello World", speed: 200 });
+const id = "typing";
+new Typed(id, { text: "Hello World", speed: 200 });
+
+// helper
+window.typingRefresh = () => {
+  document.getElementById(id).innerHTML = "";
+  new Typed(id, { text: "Hello World", speed: 200 });
+};
