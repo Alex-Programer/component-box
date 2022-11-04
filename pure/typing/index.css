@@ -1,9 +1,9 @@
-#container {
+#typing {
   animation: flicker 1.5s linear infinite forwards;
 }
 
-#container.stop {
-  animation-play-state: paused;
+#typing.stop {
+  animation: none;
 }
 
 @keyframes flicker {
