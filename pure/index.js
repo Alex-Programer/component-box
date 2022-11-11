@@ -51,8 +51,10 @@ const insertAssets = (assets) => {
     link.href = css;
     document.head.append(link);
 
-    const js = document.createElement("script");
-    js.src = script;
-    document.body.append(js);
+    if (script) {
+      const js = document.createElement("script");
+      js.src = script;
+      document.body.append(js);
+    }
   });
 };
